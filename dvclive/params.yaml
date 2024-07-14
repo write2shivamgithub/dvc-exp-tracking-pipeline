@@ -1,0 +1,10 @@
+feature_engineering_n_components: 3
+model_training_n_estimators: 40
+model_training_max_depth: 15
+model_training_bootstrap: false
+model_training_criterion: gini
+model_evaluation_n_components: 3
+model_evaluation_n_estimators: 40
+model_evaluation_max_depth: 15
+model_evaluation_bootstrap: false
+model_evaluation_criterion: gini

@@ -4,10 +4,13 @@ from sklearn.model_selection import train_test_split
 import os
 
 # URL to dataset
-url = "https://github.com/write2shivamgithub/StudentData/blob/master/student_data.csv"
+url = "https://raw.githubusercontent.com/write2shivamgithub/StudentData/master/student_data.csv"
 
 # Read the dataset
 df = pd.read_csv(url)
+
+# Convert 'No' and 'Yes' to 0 and 1 in y_pred (if necessary)
+df = df.replace({'No': 0, 'Yes': 1})
 
 # Split the data into training & testing sets
 train, test = train_test_split(df, test_size=0.2, random_state=42)
