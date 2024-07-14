@@ -21,7 +21,7 @@ stages:
     cmd: python src/model_training.py
     deps:
       - src/model_training.py
-      - data/processed/train_processed.
+      - data/processed/train_processed.csv
     params: 
       - model_training.n_estimators
       - model_training.max_depth
